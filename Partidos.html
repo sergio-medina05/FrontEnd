@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/alertify.min.css" />
+    <link rel="stylesheet" href="css/themes/default.min.css" />
+    <title>Equipos</title>
+    <style>
+        body {
+            background-color: #f7f6f6;
+
+        }
+
+        table thead {
+            background-color: #0a4f70;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Login</a>
+            <a class="navbar-brand" href="Equipos.html">Equipos</a>
+            <a class="navbar-brand" href="Usuarios.html">Usuarios</a>
+            <a class="navbar-brand" href="Partidos.html">Partidos</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4 shadow-lg p-3 mb-5  rounded ">
+        <button id="btnCrear" type="button" class="btn btn-primary">Crear Partido</button>
+
+        <table id="partidos" class="table mt-2 table-bordered table-striped">
+            <thead>
+                <tr class="text-center">
+                    <th>ID</th>
+                    <th>USUARIO</th>
+                    <th>LOCAL</th>
+                    <th>GOLES</th>
+                    <th>GOLES</th>
+                    <th>VISITANTE</th>
+                    <th>ACCIONES</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="modal fade" id="modalPartido" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Partidos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="usuario" class="col-form-label">Nombre Usuario :</label>
+                            <select id="usuario" name="usuario" class="form-control"> </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="equipolocal" class="col-form-label">Equipo local :</label>
+                            <select id="elocal" name="elocal" class="form-control" ></select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="golesL" class="col-form-label">Goles Local :</label>
+                            <input id="golesL" type="number" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="evisitante" class="col-form-label">Equipo Visitante :</label>
+                            <select id="evisitante" name="evisitante" class="form-control"></select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="golesV" class="col-form-label">Goles Visintante :</label>
+                            <input id="golesV" type="number" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+        </script>
+    <script src="js/alertify.min.js"></script>
+    <script src="js/partido.js"></script>
+
+</body>
+
+</html>

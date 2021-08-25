@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/alertify.min.css" />
+    <link rel="stylesheet" href="css/themes/default.min.css" />
+    <title>Equipos</title>
+    <style>
+        body{
+            background-color: #f7f6f6;
+
+        }
+        table thead{
+            background-color: #0a4f70;
+            color:white;
+
+        }
+
+    </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Login</a>
+      <a class="navbar-brand" href="Equipos.html">Equipos</a>
+      <a class="navbar-brand" href="Usuarios.html">Usuarios</a>
+      <a class="navbar-brand" href="Partidos.html">Partidos</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       
+
+      </div>
+    </div>
+  </nav>
+    <div class="container mt-4 shadow-lg p-3 mb-5  rounded ">
+        <button id="btnCrear" type="button" class="btn btn-primary"   >Crear Usuario</button>
+
+        <table id="pedidos" class="table mt-2 table-bordered table-striped">
+            <thead>
+                <tr class="text-center">
+                    <th>ID</th>
+                    <th>NOMBRE</th>
+                    <th>CORREO</th>
+                    <th>USERNAME</th>
+                    <th>ACCIONES</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    
+    <div class="modal fade" id="modalUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white" >
+            <h5 class="modal-title" id="exampleModalLabel">Usuarios</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="nombre" class="col-form-label">Nombre Usuario :</label>
+                <input id="nombre" type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="correo" class="col-form-label">Correo Usuario :</label>
+                <input id="correo" type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="username" class="col-form-label">Username Usuario :</label>
+                <input id="username" type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="password" class="col-form-label">Password Usuario :</label>
+                <input id="password" type="password" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="confirmar" class="col-form-label">Confirmar Password Usuario :</label>
+                <input id="confirmar" type="password" class="form-control" id="recipient-name">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+              </div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+        </script>
+    <script src="js/alertify.min.js"></script>
+    <script src="js/usuario.js"></script>
+
+</body>
+
+</html>
